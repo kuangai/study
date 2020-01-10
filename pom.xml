@@ -17,6 +17,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <druid.datasource.version>1.1.10</druid.datasource.version>
     </properties>
 
     <dependencies>
@@ -68,6 +69,21 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.10</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
@@ -78,5 +94,29 @@
             </plugin>
         </plugins>
     </build>
+
+    <!--<profiles>
+        &lt;!&ndash;开发环境&ndash;&gt;
+        <profile>
+            <id>DEV</id>
+            <properties>
+                <system.properties.path>/home/xdja/conf/zmdoa/system.properties</system.properties.path>
+                <db.properties.path>/home/xdja/conf/zmdoa/db.properties</db.properties.path>
+            </properties>
+        </profile>
+
+        &lt;!&ndash;生产环境&ndash;&gt;
+        <profile>
+            <id>PRO</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <system.properties.path>/home/conf/study/system.properties</system.properties.path>
+                <db.properties.path>/home/conf/study/db.properties</db.properties.path>
+            </properties>
+        </profile>
+
+    </profiles>-->
 
 </project>

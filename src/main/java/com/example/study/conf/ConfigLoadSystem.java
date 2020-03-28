@@ -9,7 +9,9 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
 import org.springframework.util.StringUtils;
 
-
+/**
+ * 自定义配置文件 system 加载类，配置修改后自动刷新
+ */
 public class ConfigLoadSystem {
     // 并发访问锁
     private static final ReentrantLock lock = new ReentrantLock();

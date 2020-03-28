@@ -9,7 +9,9 @@ import org.apache.commons.configuration.FileConfiguration;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
 
-
+/**
+ * 自定义配置文件目录加载类
+ */
 public class ConfigLoadApp {
     // 并发访问锁
     private static final ReentrantLock lock = new ReentrantLock();

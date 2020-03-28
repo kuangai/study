@@ -1,4 +1,4 @@
-package com.example.study.after;
+package com.example.study.task;
 
 import com.example.study.conf.ConfigLoadSystem;
 import org.springframework.scheduling.annotation.Scheduled;

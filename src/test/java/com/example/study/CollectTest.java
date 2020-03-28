@@ -8,7 +8,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 public class CollectTest {
 
     public static void main(String[] args) {
-        Set set = new HashSet();
+        Set set = new HashSet<>();
         Set set1 = new LinkedHashSet();
         Set set2 = new TreeSet();
         Set set3 = new ConcurrentSkipListSet();
@@ -16,7 +16,11 @@ public class CollectTest {
 
         Hashtable hashtable = new Hashtable();
         Map map = new ConcurrentHashMap();
-        Map c = new ConcurrentHashMap();
+        Map c = new LinkedHashMap();
         Map hashMap = new HashMap();
+
+        List list = new ArrayList();
+
+        Stack<Character> stack = new Stack<>();
     }
 }
